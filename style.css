@@ -408,3 +408,29 @@ body {
         height: 50vh;
     }
 } 
+
+/* bigger screens */
+
+@media (min-height: 630px) {
+    .container {
+        height: 95vh;
+    }
+}
+
+@media (min-height: 650px) {
+    .container {
+        height: 92vh;
+    }
+}
+
+@media (min-height: 670px) {
+    .container {
+        height: 90vh;
+    }
+}
+
+@media (min-height: 690px) {
+    .container {
+        height: 85vh;
+    }
+}
