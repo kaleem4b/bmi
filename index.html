@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <a href="#">Converter 101</a>
+        </div>
+        <!-- part one -->
+        <div class="centimeter-convertion">
+            <p>Centimeters :
+            <br>
+            <br>
+            </p>
+            <input type="text" id="cm">
+            <br>
+            <br>
+            <input type="button" value="Calculate" onclick="cm()" id="button">
+            <br>
+            <p class="text-input" id="first">Height in meters = <b id="cm-to-m"></b></p>
+        </div>
+        <!-- end of part one -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="bmi-convertion">
+            <p>Height :</p>
+            <input type="text" id="height" class="second-button">
+            <br>
+            <br>
+            <p>Weight :</p>
+            <input type="text" id="weight" class="second-button">
+            <br>
+            <br>
+            <input type="button" value="Calculate" onclick="bmi()" id="button-last">
+            <h2 class="text-input">BMI = <b id="bmi_index"></b></h2>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="section-one">Special thanks: <br>
+        Mustafa,
+        Miss Haya,
+        Miss Irum,
+        Miss Humnah,
+        </p>
+        <p class="section-two">Made by Kaleem 9B</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
