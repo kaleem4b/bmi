@@ -173,6 +173,7 @@ body {
 /* end of footer */
 /* responsive */
 /* height */
+
 @media (max-height: 1100px) {
     .bmi-convertion h2 {
         border-bottom: 3px solid rgb(110, 183, 231);
@@ -184,6 +185,185 @@ body {
     }
 }
 
+/* bigger screens */
+
+@media (min-height: 630px) {
+    .container {
+        height: 95vh;
+    }
+}
+
+@media (min-height: 650px) {
+    .container {
+        height: 92vh;
+    }
+}
+
+@media (min-height: 670px) {
+    .container {
+        height: 90vh;
+    }
+}
+
+@media (min-height: 690px) {
+    .container {
+        height: 85vh;
+    }
+}
+
+input {
+    border-radius: 5px;
+}
+
+
+@media (max-width: 650px) {
+    .bmi-convertion #button-last {
+        border-radius: 5px;
+        width: 50%;
+    }
+    #button {
+        border-radius: 5px;
+        width: 50%;
+    }
+    #cm {
+        width: 90%;
+        height: 14px;
+    }
+    .second-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .bmi-convertion #button-last {
+        border-radius: 5px;
+        width: 50%;
+    }
+    #button {
+        border-radius: 5px;
+        width: 75%;
+    }
+    #cm {
+        width: 80vw;
+        height: 14px;
+    }
+    .bmi-convertion input {
+        width: 100%;
+    }
+    .bmi-convertion {
+        grid-column: 1 / -1;
+        grid-row: 5 / 7;
+    }
+}
+
+@media (max-width: 300px) {
+    #first {
+        width: 100%;
+        text-align: center;
+    }   
+    .container {
+        width: 100vw;
+    }
+    .second-button {
+        width: 100%;
+    }
+    .heading a {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .section-one {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 220px) {
+    #cm {
+        width: 90vw;
+        height: 12px;
+    }
+    .centimeter-convertion p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+    .bmi-convertion h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* larger devices ko responsve process*/
+
+/* end of larger devices  */
+
+
+@media (max-height: 1400px) {
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 10px;
+    }
+    .centimeter-convertion {
+        grid-row: 3 / 5;
+        margin-top: -100px;
+    }
+    .bmi-convertion {
+        margin-top: 0;
+    }
+    .container {
+        height: 90vh;
+    }
+    .footer {
+        height: 10vh;
+    }
+    * {
+        margin-top: 40px;
+    }
+}
+
+@media (max-height: 1265px) {
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 50px;
+    }
+    .centimeter-convertion {
+        grid-row: 3 / 5;
+        margin-top: -150px;
+    }
+    .bmi-convertion {
+        margin-top: -100px;
+    }
+    .container {
+        height: 90vh;
+    }
+    .footer {
+        height: 10vh;
+    }
+    * {
+        margin-top: 40px;
+    }
+}
+
+@media (max-height: 1110px) {
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 50px;
+    }
+    .centimeter-convertion {
+        grid-row: 3 / 5;
+        margin-top: -170px;
+    }
+    .bmi-convertion {
+        margin-top: -100px;
+    }
+    .container {
+        height: 90vh;
+    }
+    .footer {
+        height: 10vh;
+    }
+    * {
+        margin-top: 20px;
+    }
+}
+
+
 @media (max-height: 900px) {
     .bmi-convertion h2 {
         border-bottom: 3px solid rgb(110, 183, 231);
@@ -193,9 +373,18 @@ body {
         grid-row: 3 / 5;
         margin-top: -100px;
     }
+    .bmi-convertion {
+        margin-top: 10px;
+    }
+    * {
+        margin-top: 0px;
+    }
 }
 
 @media (max-height: 825px) {
+    * {
+        margin-top: 0px;
+    }
     .bmi-convertion h2 {
         border-bottom: 3px solid rgb(110, 183, 231);
         margin-top: 0px;
@@ -204,9 +393,15 @@ body {
         grid-row: 3 / 5;
         margin-top: -100px;
     }
+    * {
+        margin-top: 0px;
+    }
 }
 
 @media (max-height: 740px) {
+    * {
+        margin-top: 0px;
+    }
     .container {
         height: 110vh;
     }
@@ -217,9 +412,15 @@ body {
     .footer {
         padding-bottom: 30px;
     }
+    * {
+        margin-top: 0px;
+    }
 }
 
 @media (max-height: 630px) {
+    * {
+        margin-top: 0px;
+    }
     .container {
         height: 120vh;
     }
@@ -233,6 +434,9 @@ body {
 }
 
 @media (max-height: 590px) {
+    * {
+        margin-top: 0px;
+    }
     .footer {
         border-top: 1px solid white;
     }
@@ -243,6 +447,9 @@ body {
 }
 
 @media (max-height: 585px) {
+    * {
+        margin-top: 0px;
+    }
     .container {
         height: 120vh;
     }
@@ -257,6 +464,9 @@ body {
 }
 
 @media (max-height: 495px) {
+    * {
+        margin-top: 0px;
+    }
     .container {
         height: 130vh;
     }
@@ -481,110 +691,3 @@ body {
         height: 52vh;
     }
 } 
-
-/* bigger screens */
-
-@media (min-height: 630px) {
-    .container {
-        height: 95vh;
-    }
-}
-
-@media (min-height: 650px) {
-    .container {
-        height: 92vh;
-    }
-}
-
-@media (min-height: 670px) {
-    .container {
-        height: 90vh;
-    }
-}
-
-@media (min-height: 690px) {
-    .container {
-        height: 85vh;
-    }
-}
-
-input {
-    border-radius: 5px;
-}
-
-@media (max-width: 650px) {
-    .bmi-convertion #button-last {
-        border-radius: 5px;
-        width: 50%;
-    }
-    #button {
-        border-radius: 5px;
-        width: 50%;
-    }
-    #cm {
-        width: 90%;
-        height: 14px;
-    }
-    .second-button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 390px) {
-    .bmi-convertion #button-last {
-        border-radius: 5px;
-        width: 50%;
-    }
-    #button {
-        border-radius: 5px;
-        width: 75%;
-    }
-    #cm {
-        width: 80vw;
-        height: 14px;
-    }
-    .bmi-convertion input {
-        width: 100%;
-    }
-    .bmi-convertion {
-        grid-column: 1 / -1;
-        grid-row: 5 / 7;
-    }
-}
-
-@media (max-width: 300px) {
-    #first {
-        width: 100%;
-        text-align: center;
-    }   
-    .container {
-        width: 100vw;
-    }
-    .second-button {
-        width: 100%;
-    }
-    .heading a {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    .section-one {
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 220px) {
-    #cm {
-        width: 90vw;
-        height: 12px;
-    }
-    .centimeter-convertion p:nth-child(1) {
-        font-size: 1.2rem;
-    }
-    .bmi-convertion h2 {
-        font-size: 1.2rem;
-    }
-}
-
-/* larger devices ko responsve process*/
-
-/* end of larger devices  */
