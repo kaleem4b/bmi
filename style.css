@@ -212,7 +212,7 @@ body {
     }
 
     .footer {
-        height: 15vh;
+        height: 19vh;
     }
 } 
 
@@ -222,7 +222,7 @@ body {
     }
 
     .footer {
-        height: 17vh;
+        height: 20vh;
     }
 } 
 
@@ -232,7 +232,7 @@ body {
     }
 
     .footer {
-        height: 18vh;
+        height: 20vh;
     }
 } 
 
@@ -242,7 +242,7 @@ body {
     }
 
     .footer {
-        height: 19vh;
+        height: 22vh;
     }
 } 
 
@@ -252,7 +252,7 @@ body {
     }
 
     .footer {
-        height: 20vh;
+        height: 22vh;
     }
 } 
 
@@ -262,7 +262,7 @@ body {
     }
 
     .footer {
-        height: 20vh;
+        height: 22vh;
     }
 } 
 
@@ -272,7 +272,7 @@ body {
     }
 
     .footer {
-        height: 22vh;
+        height: 25vh;
     }
 } 
 
@@ -282,7 +282,7 @@ body {
     }
 
     .footer {
-        height: 24vh;
+        height: 27vh;
     }
 } 
 
@@ -303,7 +303,7 @@ body {
     }
 
     .footer {
-        height: 26vh;
+        height: 29vh;
     }
 } 
 
@@ -314,7 +314,7 @@ body {
     }
 
     .footer {
-        height: 28vh;
+        height: 32vh;
     }
 } 
 
@@ -326,7 +326,7 @@ body {
     }
 
     .footer {
-        height: 30vh;
+        height: 35vh;
     }
 } 
 
@@ -336,7 +336,7 @@ body {
     }
 
     .footer {
-        height: 32vh;
+        height: 35vh;
     }
 } 
 
@@ -346,7 +346,7 @@ body {
     }
 
     .footer {
-        height: 34vh;
+        height: 37vh;
     }
 } 
 
@@ -356,7 +356,7 @@ body {
     }
 
     .footer {
-        height: 36vh;
+        height: 39vh;
     }
 } 
 
@@ -366,7 +366,7 @@ body {
     }
 
     .footer {
-        height: 39vh;
+        height: 33vh;
     }
 } 
 
@@ -376,7 +376,7 @@ body {
     }
 
     .footer {
-        height: 43vh;
+        height: 46vh;
     }
 } 
 
@@ -386,7 +386,7 @@ body {
     }
 
     .footer {
-        height: 45vh;
+        height: 48vh;
     }
 } 
 
@@ -396,7 +396,7 @@ body {
     }
 
     .footer {
-        height: 48vh;
+        height: 50vh;
     }
 } 
 
@@ -406,7 +406,7 @@ body {
     }
 
     .footer {
-        height: 48vh;
+        height: 50vh;
     }
 } 
 
@@ -416,7 +416,7 @@ body {
     }
 
     .footer {
-        height: 50vh;
+        height: 52vh;
     }
 } 
 
@@ -448,4 +448,77 @@ body {
 
 input {
     border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+    .bmi-convertion #button-last {
+        border-radius: 5px;
+        width: 50%;
+    }
+    #button {
+        border-radius: 5px;
+        width: 50%;
+    }
+    #cm {
+        width: 90%;
+        height: 14px;
+    }
+    .second-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .bmi-convertion #button-last {
+        border-radius: 5px;
+        width: 50%;
+    }
+    #button {
+        border-radius: 5px;
+        width: 75%;
+    }
+    #cm {
+        width: 80vw;
+        height: 14px;
+    }
+    .bmi-convertion input {
+        width: 100%;
+    }
+    .bmi-convertion {
+        grid-column: 1 / -1;
+        grid-row: 5 / 7;
+    }
+}
+
+@media (max-width: 300px) {
+    #first {
+        width: 100%;
+        text-align: center;
+    }   
+    .container {
+        width: 100vw;
+    }
+    .second-button {
+        width: 100%;
+    }
+    .heading a {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .section-one {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 220px) {
+    #cm {
+        width: 90vw;
+        height: 12px;
+    }
+    .centimeter-convertion p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+    .bmi-convertion h2 {
+        font-size: 1.2rem;
+    }
 }
