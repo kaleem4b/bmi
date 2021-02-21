@@ -173,10 +173,72 @@ body {
 /* end of footer */
 /* responsive */
 /* height */
+@media (max-height: 1100px) {
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 50px;
+    }
+    .centimeter-convertion {
+        grid-row: 3 / 5;
+        margin-top: -50px;
+    }
+}
+
+@media (max-height: 900px) {
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 30px;
+    }
+    .centimeter-convertion {
+        grid-row: 3 / 5;
+        margin-top: -100px;
+    }
+}
+
+@media (max-height: 825px) {
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 0px;
+    }
+    .centimeter-convertion {
+        grid-row: 3 / 5;
+        margin-top: -100px;
+    }
+}
+
+@media (max-height: 740px) {
+    .container {
+        height: 110vh;
+    }
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: -10px;
+    }
+    .footer {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-height: 630px) {
+    .container {
+        height: 120vh;
+    }
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 20px;
+    }
+    .footer {
+        padding-bottom: 30px;
+    }
+}
 
 @media (max-height: 590px) {
     .footer {
         border-top: 1px solid white;
+    }
+    .bmi-convertion h2 {
+        border-bottom: 3px solid rgb(110, 183, 231);
+        margin-top: 30px;
     }
 }
 
@@ -522,3 +584,7 @@ input {
         font-size: 1.2rem;
     }
 }
+
+/* larger devices ko responsve process*/
+
+/* end of larger devices  */
