@@ -170,6 +170,113 @@ body {
     margin-top: 2%;
 }
 
+/* effect */
+.top {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.top::after {
+    color: black;
+}
+.top::before {
+    color: black;
+}
+.top i {
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+}
+.top i ::before {
+    color: black;
+}
+.top i ::after {
+    color: black;
+}
+
+.special-text {
+    width: 50vw;
+    height: 50vh;
+    background-color: #eee;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    padding: 2rem;
+    border: 0.1rem solid #3459af;
+    border-radius: 0.2rem;
+    display: none;
+    overflow: hidden;
+}
+@keyframes animi {
+    0% {
+        margin-left: -100vw;
+    }
+    25% {
+        margin-left: -10vw;
+    }
+    50% {
+        margin-left: -10vw;
+    }
+    80% {
+        margin-left: 0vw;
+    }
+}
+.special-text-button {
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid rgb(75, 70, 70);
+    position: inherit;
+    bottom: 20px;
+    transition: all 0.5s;
+}
+.special-text-button:hover {
+    background-color: #3459af;
+    border: 1px solid #3459af;
+    color: white;
+}
+.x-btn {
+    font-size: 1.5rem;
+    color: #00154c;
+    font-weight: bolder;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+/* bmi  */
+.special-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+.special-text p {
+    margin-top: 10px;
+}
+/* end of bmi */
+.top:focus ~ .special-text {
+    display: inline;
+    animation-name: animi; 
+    animation-duration: 3s;
+}
+#show-hide-forms {
+    visibility: hidden;
+}
+.special-text span:nth-child(1) {
+    color: red;
+}
+.special-text span:nth-child(2) {
+    color: green;
+}
+/* end of effect */
+
 /* end of footer */
 /* responsive */
 /* height */
@@ -461,6 +568,9 @@ input {
     .bmi-convertion {
         margin-top: -20px;
     }
+    .special-text {
+        height: 60vh;
+    }
 }
 
 @media (max-height: 495px) {
@@ -475,6 +585,9 @@ input {
 @media (max-height: 460px) {
     .container {
         height: 140vh;
+    }
+    .special-text {
+        height: 70vh;
     }
 } 
 
@@ -496,6 +609,12 @@ input {
     .footer {
         height: 20vh;
     }
+    .special-text {
+        height: 80vh;
+        width: 60vw;
+        margin: 50px 0;
+        margin-top: -5px;
+    }
 } 
 
 @media (max-height: 360px) {
@@ -515,6 +634,15 @@ input {
 
     .footer {
         height: 22vh;
+    }
+    .special-text {
+        height: 85vh;
+        width: 90vw;
+        margin: 0 0;
+        margin-top: 0;
+    }
+    .x-btn {
+        margin-top: 10px;
     }
 } 
 
@@ -556,6 +684,18 @@ input {
     .footer {
         height: 27vh;
     }
+    .special-text {
+        height: 89vh;
+        width: 90vw;
+        margin: 0 0;
+        margin-top: 0;
+    }
+    .special-text h2 {
+        margin-bottom: 10px;
+    }
+    .special-text-button {
+        bottom: 40px;
+    }
 } 
 
 @media (max-height: 245px) {
@@ -565,6 +705,18 @@ input {
 
     .footer {
         height: 24vh;
+    }
+    .special-text {
+        height: 92vh;
+        width: 90vw;
+        margin: 0 0;
+        margin-top: 0;
+    }
+    .special-text h2 {
+        margin-bottom: 10px;
+    }
+    .special-text-button {
+        bottom: 40px;
     }
 } 
 
@@ -577,6 +729,18 @@ input {
     .footer {
         height: 29vh;
     }
+    .special-text {
+        height: 96vh;
+        width: 90vw;
+        margin: 0 0;
+        margin-top: 0;
+    }
+    .special-text h2 {
+        margin-bottom: 10px;
+    }
+    .special-text-button {
+        bottom: 40px;
+    }
 } 
 
 
@@ -587,6 +751,22 @@ input {
 
     .footer {
         height: 32vh;
+    }
+    .special-text {
+        height: 99vh;
+        width: 90vw;
+        margin: 0 0;
+        margin-top: 0;
+    }
+    .special-text h2 {
+        margin-bottom: 10px;
+        margin-top: -5px;
+    }
+    .special-text-button {
+        bottom: 42px;
+    }
+    .x-btn {
+        margin-top: 10px;
     }
 } 
 
@@ -599,6 +779,29 @@ input {
 
     .footer {
         height: 35vh;
+    }
+    .footer {
+        height: 32vh;
+    }
+    .special-text {
+        height: 101vh;
+        width: 90vw;
+        margin: 0 0;
+        margin-top: 0;
+    }
+    .special-text h2 {
+        margin-bottom: 10px;
+        margin-top: -5px;
+    }
+    .special-text-button {
+        bottom: 42px;
+        padding: 3px 10px;
+    }
+    .special-text p {
+        margin-top: 2px;
+    }
+    .x-btn {
+        margin-top: 10px;
     }
 } 
 
@@ -619,6 +822,9 @@ input {
 
     .footer {
         height: 37vh;
+    }
+    .footer {
+        height: 32vh;
     }
 } 
 
